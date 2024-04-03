@@ -6,3 +6,15 @@ When making contributions to the "AlgoBook" work with a development branch off o
 
 ## Installation
 To use and view the documentation, install `mdBook` either through `cargo` or a pre-compiled binary. The process of installation is within `mdBook`s documention.
+
+## Local Viewing
+To host and view the documentation, you must have `mdBook` installed.
+
+To build:
+```
+mdbook build
+```
+And to serve:
+```
+mdbook serve --open
+```
