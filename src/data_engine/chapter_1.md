@@ -1,5 +1,6 @@
 # Chapter 1 - The Data Engine
 The data engine system works by collecting raw data from our data provider, Databento, and transforming it into a format that can be used by our divergent, convergent, and experiential systems. The data engine kicks off the data pipeline, which is a series of steps that the data goes through to be transformed into a usable format. 
+The data engine can be found in the `data_engine` repository, [here](https://github.com/algoGators/data_engine/).
 
 The data engine is responsible for the following tasks:
 - Collecting raw data from Databento.
