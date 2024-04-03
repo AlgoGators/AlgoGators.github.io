@@ -14,3 +14,5 @@ The raw data is stored in two separate dataframes: one for the `OHLCV-1d` schema
 raw = pd.merge(data, definitions, how='inner', left_index=True, right_on=definitions.index, suffixes=('_data', '_definition'))
 raw.to_parquet(f'raw/{symbol}_full.parquet')
 ```
+
+The raw data of each instrument is stored in a separate parquet file. The data is now ready for any additional transformations that are needed before it can be used for analysis.
