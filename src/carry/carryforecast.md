@@ -14,11 +14,26 @@ Raw carry is defined as either:
 
 Annualized carry reflects what we can expect to earn between expiries. Some contracts trade quarterly, other monthly; and even some that roll usually two but sometimes three months apart. We must annualize to get a consistent estimate of carry.
 
-\\[\text{Expiry Difference in Years = \text{|Months between Contracts|\div 12}}\\ ]
+\\[\text{Expiry Difference in Years} = \text{|Months between Contracts|\div 12}\\]
 
+\\[\text{Annualized Raw Carry} = \text{Raw Carry\div {Expiry Difference in Years}}\\ ]
 
-Our raw forecast of a single window is given by the following formula:
+## Risk Adjustment
+
+Since our annualized carry is in units of price, it makes sense to divide it by the annualized standard deviation of retunrs. 
 
 \\[ \text{Carry} = \frac{\text{Annualized Carry}}{\sigma_{p} \times 16} \\]
 
+## Smoothing
 
+Carry estimates are often unusually noisy. To deal with this, we must smooth the forecast in some way. 
+
+\\ [\text{Smoothed Carry Forecast(Span)} = \text{EWMA_{span}(Carry Forecast)}\\ ]
+
+We use four different spans as our carry trading rule variations: 5 business days, 20 business days, 60 business days, and 120 business days.
+
+## Scaling and Capping
+
+Using the same Forecast Scalar formuala from Trend, we then scale our Smoothed Carry Forecast:
+
+\\ [\text{Scaled Carry Forecast(Span)} = \text{Smoothed Carry Forecast(Span)} \times \text{Forecast Scaler} \\]
