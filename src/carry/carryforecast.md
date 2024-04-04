@@ -16,7 +16,7 @@ Annualized carry reflects what we can expect to earn between expiries. Some cont
 
 \\[\text{Expiry Difference in Years} = \text{|Months between Contracts|\div 12}\\]
 
-\\[\text{Annualized Raw Carry} = \text{Raw Carry\div {Expiry Difference in Years}}\\ ]
+\\[\text{Annualized Raw Carry} = \text{Raw Carry\div {Expiry Difference in Years}} \\]
 
 ## Risk Adjustment
 
@@ -28,7 +28,7 @@ Since our annualized carry is in units of price, it makes sense to divide it by 
 
 Carry estimates are often unusually noisy. To deal with this, we must smooth the forecast in some way. 
 
-\\[\text{Smoothed Carry Forecast}\text{(Span)}  = \text{EWMA}\text{(Carry Forecast)} \\]
+\\[\text{Smoothed Carry Forecast(Span)} = \text{EWMA_{span}(Carry Forecast)} \\]
 
 We use four different spans as our carry trading rule variations: 5 business days, 20 business days, 60 business days, and 120 business days.
 
@@ -37,3 +37,5 @@ We use four different spans as our carry trading rule variations: 5 business day
 Using the same Forecast Scalar formuala from Trend, we then scale our Smoothed Carry Forecast:
 
 \\[\text{Scaled Carry Forecast(Span)} = \text{Smoothed Carry Forecast(Span)} \times \text{Forecast Scaler} \\]
+
+The scaled combined forecast is then capped at a maximum value of +/- 20. 
