@@ -14,9 +14,9 @@ Raw carry is defined as either:
 
 Annualized carry reflects what we can expect to earn between expiries. Some contracts trade quarterly, other monthly; and even some that roll usually two but sometimes three months apart. We must annualize to get a consistent estimate of carry.
 
-\\[\text{Expiry Difference in Years} = \text{|Months between Contracts|\div 12}\\]
+\\[\text{Expiry Difference in Years} = \text{\|Months between Contracts\|} \div 12\\]
 
-\\[\text{Annualized Raw Carry} = \text{Raw Carry\div {Expiry Difference in Years}} \\]
+\\[\text{Annualized Raw Carry} = \text{Raw Carry} \div \text{Expiry Difference in Years} \\]
 
 ## Risk Adjustment
 
