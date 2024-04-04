@@ -11,6 +11,10 @@
 
 # Strategies
 - [Trend Following](./trend.md)
+    - [Forecast Generation](./trend/ema.md)
+    - [Position Sizing](./trend/position.md)
+    - [Multi-Window Strategy](./trend/multi.md)
+
 - [Carry Trade](./carry.md)
 
 # Portfolio Management
