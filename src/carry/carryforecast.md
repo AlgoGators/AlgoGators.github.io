@@ -14,6 +14,6 @@ or
 
 Our raw forecast of a single window is given by the following formula:
 
-\\[ f_t = \Annualized Carry {\sigma_{p}x16} \\]
+\\[ \text{Carry} = \frac{\text{Annualized Carry}}{\sigma_{p} \times 16} \\]
 
 

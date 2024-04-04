@@ -15,7 +15,7 @@
     - [Position Sizing](./trend/position.md)
     - [Multi-Window Strategy](./trend/multi.md)
 
-- [Carry Trade](./carry.md)
+- [Carry Trade](./carry/carryforecast.md)
 
 # Portfolio Management
 - [Dynamic Optimization](./dynamic.md)
