@@ -14,6 +14,7 @@
     - [Forecast Generation](./trend/ema.md)
     - [Position Sizing](./trend/position.md)
     - [Multi-Window Strategy](./trend/multi.md)
+    - [Implementation](./trend/impl.md)
 
 - [Carry Trade](./carry/carryforecast.md)
 
